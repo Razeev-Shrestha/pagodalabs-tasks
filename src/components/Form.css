@@ -1,0 +1,13 @@
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin: 32px 0;
+}
+
+.form-container .gender-input,
+.submit-btn {
+  margin-top: 30px;
+}

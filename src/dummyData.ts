@@ -1,0 +1,182 @@
+import { DataType } from "./types/types";
+
+export const genderOptions = [
+  {
+    type: "Male",
+    value: "male",
+  },
+  {
+    type: "Female",
+    value: "female",
+  },
+  {
+    type: "Other",
+    value: "other",
+  },
+];
+
+export const sortOptions = [
+  {
+    type: "Name (A-Z)",
+    value: "name-asc",
+  },
+  {
+    type: "Name (Z-A)",
+    value: "name-desc",
+  },
+  {
+    type: "Age (Low-High)",
+    value: "age-asc",
+  },
+  {
+    type: "Age (High-Low)",
+    value: "age-desc",
+  },
+  {
+    type: "Phone Number (Low-High)",
+    value: "phone-asc",
+  },
+  {
+    type: "Phone Number (High-Low)",
+    value: "phone-desc",
+  },
+] as const;
+
+export const randomData: DataType[] = [
+  {
+    id: 1,
+    firstName: "Alice",
+    lastName: "Smith",
+    age: 28,
+    dateOfBirth: "1995-09-12",
+    phoneNumber: "555-1234",
+    gender: "female",
+  },
+  {
+    id: 2,
+    firstName: "Bob",
+    lastName: "Johnson",
+    age: 45,
+    dateOfBirth: "1980-03-25",
+    phoneNumber: "555-5678",
+    gender: "male",
+  },
+  {
+    id: 3,
+    firstName: "Emma",
+    lastName: "Brown",
+    age: 22,
+    dateOfBirth: "2001-11-08",
+    phoneNumber: "555-2468",
+    gender: "female",
+  },
+  {
+    id: 4,
+    firstName: "Daniel",
+    lastName: "Davis",
+    age: 31,
+    dateOfBirth: "1992-07-19",
+    phoneNumber: "555-7890",
+    gender: "male",
+  },
+
+  {
+    id: 8,
+    firstName: "Noah",
+    lastName: "Anderson",
+    age: 33,
+    dateOfBirth: "1989-10-22",
+    phoneNumber: "555-9753",
+    gender: "male",
+  },
+  {
+    id: 9,
+    firstName: "Ava",
+    lastName: "Thomas",
+    age: 29,
+    dateOfBirth: "1994-08-07",
+    phoneNumber: "555-6421",
+    gender: "female",
+  },
+  {
+    id: 10,
+    firstName: "Elijah",
+    lastName: "Harris",
+    age: 36,
+    dateOfBirth: "1987-06-14",
+    phoneNumber: "555-2580",
+    gender: "male",
+  },
+  {
+    id: 13,
+    firstName: "Harper",
+    lastName: "Garcia",
+    age: 30,
+    dateOfBirth: "1993-12-17",
+    phoneNumber: "555-5036",
+    gender: "female",
+  },
+  {
+    id: 14,
+    firstName: "James",
+    lastName: "White",
+    age: 38,
+    dateOfBirth: "1984-11-02",
+    phoneNumber: "555-6825",
+    gender: "male",
+  },
+  {
+    id: 15,
+    firstName: "Evelyn",
+    lastName: "Martinez",
+    age: 27,
+    dateOfBirth: "1996-03-10",
+    phoneNumber: "555-3478",
+    gender: "female",
+  },
+  {
+    id: 16,
+    firstName: "Riley",
+    lastName: "Adams",
+    age: 32,
+    dateOfBirth: "1990-06-28",
+    phoneNumber: "555-9603",
+    gender: "other",
+  },
+  {
+    id: 17,
+    firstName: "Jordan",
+    lastName: "Clark",
+    age: 24,
+    dateOfBirth: "1999-04-20",
+    phoneNumber: "555-2714",
+    gender: "other",
+  },
+  {
+    id: 18,
+    firstName: "Sawyer",
+    lastName: "Baker",
+    age: 35,
+    dateOfBirth: "1988-11-15",
+    phoneNumber: "555-7392",
+    gender: "other",
+  },
+  {
+    id: 19,
+    firstName: "Quinn",
+    lastName: "Gonzalez",
+    age: 21,
+    dateOfBirth: "2002-02-10",
+    phoneNumber: "555-8247",
+    gender: "other",
+  },
+  {
+    id: 20,
+    firstName: "Avery",
+    lastName: "Wright",
+    age: 39,
+    dateOfBirth: "1984-08-03",
+    phoneNumber: "555-5023",
+    gender: "other",
+  },
+];

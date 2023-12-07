@@ -1,0 +1,11 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+div label {
+  display: block;
+  margin-bottom: 8px;
+  color: #666;
+}
