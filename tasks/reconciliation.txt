@@ -1,0 +1,33 @@
+What is React reconciliation and how can we avoid the multiple reconciliation issue? Show us
+the techniques with examples.
+
+Answer:
+    React reconciliation is the process that updates the DOM based on the changes made in react component tree.
+    When a component's either state or props changes , react triggers the re-render of the component and it's child components.
+    Now a new virtual DOM tree is created and saved in memory representing the updated state of the component.
+    Then, react compares the new virtual DOM with previous one, here react uses diffing algorithm, based on that react only updates the actual DOM 
+    with less changes by adding, removing or updating elements.
+
+ 
+Points on how we can solve the multiple reconciliation issue:
+
+->memoization
+    memo(React.memo) using this HOC we can prevent unnecessary re-renders, as it compares the components
+    props to its previous state.
+
+    useMemo: This hook caches a value and only runs when the dependancies changes.
+
+->Keys:
+    keys plays crucial role when working with lists and elements. keys helps react identify the elements so that it doesn't need to re-render unnecessarily.
+    Note:index should be avoided while using keys because , during list updation index might get changed which trigger the re-render.
+
+->Lazy loading:
+    lazy load the components when needed,
+     so that it prevents unnecessary initial renders.
+
+->Conditional rendering:
+    Using Conditional rendering to render components based on Conditions also prevents unnecessary rendering.
+
+React version 18 introduced concurrent rendering and automatic batch updates to improve performance of react apps.
+
+Some Examples are in memoization.tsx file.

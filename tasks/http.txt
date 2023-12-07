@@ -1,0 +1,26 @@
+Parts of an HTTP request:
+
+ ->Request Line:
+    Method:the action the client wants to perform on the server (e.g., GET, POST, PUT, DELETE).
+    URL:the location of the resource the client wants to access.
+    Protocol:the version of HTTP used (e.g., HTTP/1.1, HTTP/2).
+
+->Headers:
+    Optional key-value pairs: Provide additional information about the request, such as:
+    Content-Type: Specifies the format of the request body (e.g., application/json, text/plain).
+    User-Agent: Identifies the client software and operating system.
+    Authorization: Contains authentication credentials if required.
+    Cookies: Stores session information and preferences.
+
+->Body:
+    Optional content: The actual data sent to the server, usually used for POST, PUT, and PATCH requests.
+The body format depends on the Content-Type header.   
+
+->Common pitfall:
+    If an HTTPS page includes resources (images, scripts) loaded through non-encrypted HTTP, 
+    the connection can be intercepted and manipulated.This can expose sensitive information or inject malicious code into the page, 
+    compromising security.
+
+->Solution: 
+    We have to ensure all resources loaded on an HTTPS page are also served over HTTPS to maintain secure communication and prevent
+     attackers from exploiting vulnerabilities.
